@@ -10,11 +10,11 @@ A momentum trading bot for the [Pump.fun Replay Sprint — Paper Bot, Real Ranki
 
 On pump.fun, a curve's first seconds decide most of its life. Launch Sniper buys at the launch itself, before any run, with tiny stakes spread over hundreds of coins:
 
-- the creator bought 1.0–2.5 SOL of their own launch (real skin in the game, but not a one-wallet show);
+- the creator bought 1.5–2.0 SOL of their own launch (real skin in the game, but not a one-wallet show);
 - at most 3 other wallets have bought so far (a launch bundled by many wallets is a dump in waiting);
 - the creator has not sold; real SOL reserves between 0.3 and 30 SOL.
 
-Every position exits fast: a 25% take-profit, an 8% stop loss, a trailing stop once up 10%, a 20-slot time limit, or an immediate exit when the creator sells. A light probe mechanism keeps the run above the guardrail minimum of 20 distinct coins if launches ever dry up.
+Every position exits fast: a 25% take-profit, a 10% stop loss, a trailing stop once up 10%, a 20-slot time limit, or an immediate exit when the creator sells. A light probe mechanism keeps the run above the guardrail minimum of 20 distinct coins if launches ever dry up.
 
 See [STRATEGY.md](STRATEGY.md) for the full rules and parameters.
 
