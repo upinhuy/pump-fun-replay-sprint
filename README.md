@@ -8,14 +8,13 @@ A momentum trading bot for the [Pump.fun Replay Sprint — Paper Bot, Real Ranki
 
 ## How it works
 
-Most pump.fun curves die quietly; a few run hard in their first minutes. Breakout Rider only buys a curve once the tape proves real, broad buying:
+On pump.fun, a curve's first seconds decide most of its life. Launch Sniper buys at the launch itself, before any run, with tiny stakes spread over hundreds of coins:
 
-- several distinct wallets buying, net SOL flowing in over a 60-slot window;
-- price up 5–150% over the window and holding near its window high;
-- the newer half of the window accelerating over the older half;
-- no single wallet dominating the buys; real SOL reserves between 2 and 60 SOL.
+- the creator bought 1.0–2.5 SOL of their own launch (real skin in the game, but not a one-wallet show);
+- at most 3 other wallets have bought so far (a launch bundled by many wallets is a dump in waiting);
+- the creator has not sold; real SOL reserves between 0.3 and 30 SOL.
 
-It starts small (0.05 SOL), pyramids only while the tape stays strong (up to 0.6 SOL per coin), and exits fast: a 20% stop loss, a 30% trailing stop once up 5%, a 2.2× take-profit, a fade exit on strong outflow while underwater, or a 1500-slot time limit. A light probe mechanism keeps the run above the guardrail minimum of 20 distinct coins with real round trips.
+Every position exits fast: a 25% take-profit, an 8% stop loss, a trailing stop once up 10%, a 20-slot time limit, or an immediate exit when the creator sells. A light probe mechanism keeps the run above the guardrail minimum of 20 distinct coins if launches ever dry up.
 
 See [STRATEGY.md](STRATEGY.md) for the full rules and parameters.
 
